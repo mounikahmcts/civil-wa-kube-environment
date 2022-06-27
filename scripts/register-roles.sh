@@ -46,6 +46,13 @@ SERVICE_TOKEN="$(sh ./actions/idam-service-token.sh)"
 ./actions/register-role.sh "caseworker-sscs" "$USER_TOKEN" "$SERVICE_TOKEN"
 ./actions/register-role.sh "caseworker-sscs-dwpresponsewriter" "$USER_TOKEN" "$SERVICE_TOKEN"
 
+
+./actions/register-role.sh "caseworker-civil-solicitor" "$USER_TOKEN" "$SERVICE_TOKEN"
+./actions/register-role.sh "caseworker-civil-systemupdate" "$USER_TOKEN" "$SERVICE_TOKEN"
+./actions/register-role.sh "caseworker-civil-admin" "$USER_TOKEN" "$SERVICE_TOKEN"
+./actions/register-role.sh "caseworker-civil-staff" "$USER_TOKEN" "$SERVICE_TOKEN"
+
+
 ./actions/register-role.sh "payments" "$USER_TOKEN" "$SERVICE_TOKEN"
 
 # Roles required for Notice of Change
