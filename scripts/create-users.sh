@@ -65,10 +65,10 @@ echo "Setting up IA Users..."
 ./actions/create-user.sh "${TEST_JUDGE_X_USERNAME}" "Judge" "X" "${TEST_JUDGE_X_PASSWORD}" "caseworker" "[{ \"code\": \"caseworker\"}, { \"code\": \"caseworker-ia\"}, { \"code\": \"caseworker-ia-iacjudge\"}]"
 
 echo "Setting up CIVIL Users..."
-./actions/create-user.sh "${CIVIL_WA_SYSTEM_USERNAME}" "CivilWASystem" "WaUser" "${WA_SYSTEM_PASSWORD}" "caseworker" "[{ \"code\": \"caseworker\"}, { \"code\": \"caseworker-civil\"}, { \"code\": \"caseworker-civil-admin\"}, { \"code\": \"caseworker-wa\"}, { \"code\": \"caseworker-wa-task-configuration\"}]"
+./actions/create-user.sh "${CIVIL_WA_SYSTEM_USERNAME}" "CivilWASystem" "WaUser" "${CIVIL_WA_SYSTEM_PASSWORD}" "caseworker" "[{ \"code\": \"caseworker\"}, { \"code\": \"caseworker-civil\"}, { \"code\": \"caseworker-civil-admin\"}, { \"code\": \"caseworker-wa\"}, { \"code\": \"caseworker-wa-task-configuration\"}]"
 
-./actions/create-user.sh "${CIVIL_TEST_LAW_FIRM_A_USERNAME}" "A" "Civil Legal Rep" "${TEST_LAW_FIRM_A_PASSWORD}" "caseworker" "[{ \"code\": \"caseworker\"}, { \"code\": \"caseworker-civil\"}, { \"code\": \"caseworker-civil-solicitor\"},  { \"code\": \"caseworker-civil-admin\"}, { \"code\": \"caseworker-civil-systemupdate\"}, { \"code\": \"payments\"},{ \"code\": \"caseworker-wa\"}, { \"code\": \"caseworker-wa-task-configuration\"}]"
+./actions/create-user.sh "${CIVIL_TEST_LAW_FIRM_A_USERNAME}" "A" "Civil Legal Rep" "${CIVIL_TEST_LAW_FIRM_A_PASSWORD}" "caseworker" "[{ \"code\": \"caseworker\"}, { \"code\": \"caseworker-civil\"}, { \"code\": \"caseworker-civil-solicitor\"},  { \"code\": \"caseworker-civil-admin\"}, { \"code\": \"caseworker-civil-systemupdate\"}, { \"code\": \"payments\"},{ \"code\": \"caseworker-wa\"}, { \"code\": \"caseworker-wa-task-configuration\"}]"
 
-./actions/create-user.sh "${CIVIL_TEST_CASEOFFICER_USERNAME}" "Civil Case" "Officer" "${TEST_CASEOFFICER_PASSWORD}" "caseworker" "[{ \"code\": \"caseworker\"}, { \"code\": \"caseworker-civil\"}, { \"code\": \"caseworker-civil-admin\"}, { \"code\": \"payments\"}]"
-./actions/organisational-role-assignment.sh "${CIVIL_TEST_CASEOFFICER_USERNAME}" "${TEST_CASEOFFICER_PASSWORD}" "PUBLIC" "case-allocator" '{"jurisdiction":"CIVIL","primaryLocation":"765324"}'
-./actions/organisational-role-assignment.sh "${CIVIL_TEST_CASEOFFICER_USERNAME}" "${TEST_CASEOFFICER_PASSWORD}" "PUBLIC" "task-supervisor" '{"jurisdiction":"CIVIL","primaryLocation":"765324"}'
+./actions/create-user.sh "${CIVIL_TEST_CASEOFFICER_USERNAME}" "Civil Case" "Officer" "${CIVIL_TEST_CASEOFFICER_PASSWORD}" "caseworker" "[{ \"code\": \"caseworker\"}, { \"code\": \"caseworker-civil\"}, { \"code\": \"caseworker-civil-admin\"}, { \"code\": \"payments\"}]"
+./actions/organisational-role-assignment.sh "${CIVIL_TEST_CASEOFFICER_USERNAME}" "${CIVIL_TEST_CASEOFFICER_PASSWORD}" "PUBLIC" "case-allocator" '{"jurisdiction":"CIVIL","primaryLocation":"765324"}'
+./actions/organisational-role-assignment.sh "${CIVIL_TEST_CASEOFFICER_USERNAME}" "${CIVIL_TEST_CASEOFFICER_PASSWORD}" "PUBLIC" "task-supervisor" '{"jurisdiction":"CIVIL","primaryLocation":"765324"}'
